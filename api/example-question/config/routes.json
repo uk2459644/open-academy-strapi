@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/example-questions",
+      "handler": "example-question.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/example-questions/count",
+      "handler": "example-question.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/example-questions/:id",
+      "handler": "example-question.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/example-questions",
+      "handler": "example-question.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/example-questions/:id",
+      "handler": "example-question.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/example-questions/:id",
+      "handler": "example-question.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

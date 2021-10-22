@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "units",
+  "info": {
+    "name": "Unit"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "draft": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "publish": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "course": {
+      "via": "units",
+      "model": "course"
+    },
+    "topics": {
+      "via": "unit",
+      "collection": "topic"
+    }
+  }
+}

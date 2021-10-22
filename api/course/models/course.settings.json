@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "publish": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "draft": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "units": {
+      "via": "course",
+      "collection": "unit"
+    },
+    "image": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_slices_testimonials_groups",
+  "info": {
+    "name": "TestimonialsGroup",
+    "icon": "user-friends"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "link": {
+      "type": "component",
+      "repeatable": false,
+      "component": "links.link"
+    }
+  }
+}

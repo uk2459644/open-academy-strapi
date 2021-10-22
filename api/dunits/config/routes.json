@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/dunits",
+      "handler": "dunits.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dunits/count",
+      "handler": "dunits.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/dunits/:id",
+      "handler": "dunits.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/dunits",
+      "handler": "dunits.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/dunits/:id",
+      "handler": "dunits.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/dunits/:id",
+      "handler": "dunits.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

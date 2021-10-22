@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "public_data",
+  "info": {
+    "name": "Draftdata",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "userid": {
+      "type": "string"
+    },
+    "Publish": {
+      "type": "boolean",
+      "default": false
+    },
+    "Draft": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

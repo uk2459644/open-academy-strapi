@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "example_questions",
+  "info": {
+    "name": "Example Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Basic",
+        "Medium",
+        "Advance"
+      ]
+    },
+    "content": {
+      "type": "json"
+    },
+    "topic": {
+      "model": "topic",
+      "via": "example_questions"
+    },
+    "answer": {
+      "type": "json"
+    }
+  }
+}

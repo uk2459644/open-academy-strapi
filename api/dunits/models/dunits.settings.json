@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "dunits",
+  "info": {
+    "name": "Dunits"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "userid": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "draft": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

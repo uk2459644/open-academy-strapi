@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/practice-questions",
+      "handler": "practice-question.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practice-questions/count",
+      "handler": "practice-question.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/practice-questions/:id",
+      "handler": "practice-question.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/practice-questions",
+      "handler": "practice-question.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/practice-questions/:id",
+      "handler": "practice-question.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/practice-questions/:id",
+      "handler": "practice-question.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

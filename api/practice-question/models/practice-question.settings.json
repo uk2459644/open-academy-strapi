@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "practice_questions",
+  "info": {
+    "name": "Practice Question",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "Basic",
+        "Medium",
+        "Advanced"
+      ]
+    },
+    "content": {
+      "type": "json"
+    },
+    "answerType": {
+      "type": "enumeration",
+      "enum": [
+        "NAT",
+        "MCQ"
+      ]
+    },
+    "answer": {
+      "type": "string"
+    },
+    "answerContent": {
+      "type": "json"
+    },
+    "topic": {
+      "model": "topic",
+      "via": "practice_questions"
+    }
+  }
+}
