@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "dunits",
   "info": {
-    "name": "Dunits"
+    "name": "Dunits",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -23,6 +24,9 @@
     "draft": {
       "type": "boolean",
       "default": true
+    },
+    "editorjs": {
+      "type": "richtext"
     }
   }
 }
