@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "setquestions",
+  "info": {
+    "name": "Setquestion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "sett": {
+      "model": "sett",
+      "via": "setquestions"
+    },
+    "correctMark": {
+      "type": "float",
+      "default": 1
+    },
+    "negativeMark": {
+      "type": "float",
+      "default": 0
+    },
+    "correctOpt": {
+      "type": "string"
+    },
+    "userOpt": {
+      "type": "string",
+      "default": "m"
+    }
+  }
+}

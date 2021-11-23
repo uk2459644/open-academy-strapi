@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/setquestions",
+      "handler": "setquestion.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/setquestions/count",
+      "handler": "setquestion.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/setquestions/:id",
+      "handler": "setquestion.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/setquestions",
+      "handler": "setquestion.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/setquestions/:id",
+      "handler": "setquestion.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/setquestions/:id",
+      "handler": "setquestion.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

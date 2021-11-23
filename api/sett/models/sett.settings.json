@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "setts",
+  "info": {
+    "name": "Sett",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "set_category": {
+      "via": "setts",
+      "model": "set-category"
+    },
+    "setquestions": {
+      "via": "sett",
+      "collection": "setquestion"
+    }
+  }
+}

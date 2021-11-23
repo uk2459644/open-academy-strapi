@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "set_categories",
+  "info": {
+    "name": "Set Category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "json"
+    },
+    "setts": {
+      "via": "set_category",
+      "collection": "sett"
+    }
+  }
+}
