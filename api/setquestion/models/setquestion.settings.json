@@ -30,12 +30,11 @@
       "type": "float",
       "default": 0
     },
-    "correctOpt": {
-      "type": "string"
+    "qNo": {
+      "type": "integer"
     },
-    "userOpt": {
-      "type": "string",
-      "default": "m"
+    "status": {
+      "type": "string"
     }
   }
 }
