@@ -24,10 +24,6 @@
     "Publish": {
       "type": "boolean",
       "default": false
-    },
-    "Draft": {
-      "type": "boolean",
-      "default": true
     }
   }
 }
